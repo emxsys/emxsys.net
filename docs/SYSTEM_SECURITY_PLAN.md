@@ -42,17 +42,18 @@ _Indicate if the system is a major application or a general support system. If t
 
 ## 9. General System Description/Purpose 
 _Describe the function or purpose of the system and the information processes._
+> A web server providing OGC services, such as WMS, WCS and WFS, to [WorldWindEarth](https://worldwindearth.github.io) and 
+> [EarthViewer](https://earthviewer/githup.io) projects.
 
->- Apache Web Server
->- Tomcat
->- MapServer
->- GeoServer
 
 ## 10. System Environment 
 _Provide a general description of the technical system. Include the primary hardware, software, and communications equipment._
 >- Digital Ocean VM
 >- Linux 16.04 LTS
-
+>- Apache Web Server
+>- Tomcat
+>- MapServer
+>- GeoServer
 ## 11. System Interconnections/Information Sharing 
 _List interconnected systems and system identifiers (if appropriate), provide the system, name, organization, system type (major application or general support system), indicate if there is an ISA/MOU/MOA on file, date of agreement to interconnect, FIPS 199 category, C&A status, and the name of the authorizing official._
 
