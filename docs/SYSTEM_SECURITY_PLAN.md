@@ -34,7 +34,7 @@ _Indicate the operational status of the system. If more than one status is selec
 - [x] Under Development
 - [ ] Major Modification
 
-## 8. Information Sysetm Type:
+## 8. Information System Type:
 _Indicate if the system is a major application or a general support system. If the system contains minor applications, list them in Section 9. General System Description/Purpose._
 
 - [ ] Major Application
