@@ -43,21 +43,21 @@ _Indicate if the system is a major application or a general support system. If t
 ## 9. General System Description/Purpose 
 _Describe the function or purpose of the system and the information processes._
 
-> Apache Web Server
-> Tomcat
-> MapServer
-> GeoServer
+>- Apache Web Server
+>- Tomcat
+>- MapServer
+>- GeoServer
 
 ## 10. System Environment 
 _Provide a general description of the technical system. Include the primary hardware, software, and communications equipment._
-> Digital Ocean VM
-> Linux 16.04 LTS
+>- Digital Ocean VM
+>- Linux 16.04 LTS
 
 ## 11. System Interconnections/Information Sharing 
 _List interconnected systems and system identifiers (if appropriate), provide the system, name, organization, system type (major application or general support system), indicate if there is an ISA/MOU/MOA on file, date of agreement to interconnect, FIPS 199 category, C&A status, and the name of the authorizing official._
 
 System Name | Organization | Type | Agreement (ISA/MOU/MOA) | Date | FIPS 199 Category | C&A Status | Auth. Official
-------------+--------------+------+-------------------------+------+-------------------+------------+----------------
+----------- | ------------ | ---- | ----------------------- | ---- |------------------ | ---------- | ---------------
 VM | Digital Ocean | 
 
 
