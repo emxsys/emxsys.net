@@ -171,3 +171,51 @@ $ sudo a2enmod xml2enc
 $ sudo systemctl restart apache2
 $ sudo systemctl status apache2
 ```
+### Install PostFix for send only
+```shell
+sudo apt-get update
+sudo apt install mailutils
+sudo ufw app list
+sudo ufw app info 'Postfix'
+sudo ufw app info 'Postfix SMTPS'
+sudo ufw app info 'Postfix Submission'
+sudo ufw allow 'Postfix Submission'
+sudo ufw status
+```
+#### To reconfigure
+```shell
+sudo dpkg-reconfigure postfix
+```
+#### To setup 
+```shell
+sudo nano /etc/postfix/main.cf
+sudo systemctl status postfix
+```
+
+### Install LogWatch
+```shell
+sudo apt-get update
+sudo apt-get install logwatch
+sudo nano /usr/share/logwatch/default.conf/logwatch.conf 
+```
+#### Review daily report job
+```shell
+cat /etc/cron.daily/00logwatch 
+```
+#### Test
+```shell
+sudo logwatch --detail med --service all --range "since 24 hours ago for those hours" | less  
+```
+#### Test email report
+```shell
+sudo /usr/sbin/logwatch --output mail
+```
+
+### Install Fail2Ban
+```shell
+sudo apt-get update
+sudo apt-get install fail2ban
+sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+sudo nano /etc/fail2ban/jail.local 
+sudo systemctl restart fail2ban
+```
